@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.landing{
+
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.774),rgba(0, 0, 0, 0.596)),url(images/masks1.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+
+}
+
+.nav-links{
+
+    flex: 1;
+}
+
+.nav-links ul{
+
+    margin-left: 50px;
+    display: inline;
+
+}
+
+.nav-links ul li{
+
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+
+.nav-links ul a{
+
+    color:#fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellowgreen;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+
+}
+
+.landing-banner{
+    margin: 80px 130px;
+    color: #fff;
+}
+
+.landing-banner h1{
+    font-size: 64px;
+    margin-bottom: 30px;
+    
+}
+
+.landing-banner h1 span{
+    color: yellowgreen;
+}
+.vertical-bar{
+    height:100%;
+    background: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.social-icons{
+    height:35%;
+    width:80px;
+    background: yellowgreen;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+}
+
+.social-icons .fa{
+    margin: 15px 23px;
+    display:block;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.nav-bar .fa{
+    
+    display:none;
+}
+
+.covidInfo{
+
+    margin: 80px 130px;
+    color: #fff;
+
+}
+
+.covidInfo.span{
+    color: yellowgreen;
+}
+
+.covidInfo.h2{
+
+    font-size: 52px;
+    margin-bottom: 30px;
+
+}
+
+.covidInfo.h3{
+
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.nav2{
+    background: yellowgreen;
+    margin: auto;
+    width: 400px;
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.hpbutton{
+    flex-basis: 50%;
+    padding:10px;
+    text-align: center;
+    font-size: 18;
+}
+
+.hpbutton a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.hpbutton p{
+
+    text-align: center;
+    margin-top: 10px;
+}
+.covidInfo ul li a{
+
+    display:table;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .02;
+    font-weight: 700;
+    background-color: yellowgreen;
+    color:white;
+    border-radius: .24em;
+    margin-bottom: 1em;
+    padding: 1em 2em;
+    font-size: 1em;
+
+}
+
+
+
+@media (max-width: 700px){
+
+    .vertical-bar{
+        display:none;
+
+    }
+
+    .landing-banner{
+        margin: 80px 40px;
+
+    }
+
+    .landing-banner h1{
+        font-size: 40px;
+        
+    }
+
+    .nav-bar{
+
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+
+    }
+    .nav-bar .fa{
+
+        display:block;
+        color:yellowgreen;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links{
+        height:100vh;
+        width:200px;
+        background:black;
+        top:0;
+        right:-200;
+        position: absolute;
+        text-align: left; 
+        z-index: 2;
+        transition:0.5s
+    }
+    .nav-links ul a{
+        
+        display:block;
+    }
+
+    .covidInfo{
+
+        margin: 40px 65px;
+       color: #fff;
+    }
+
+    .nav2{
+        width:100%;
+    }
+
+    .covidInfo h3 span{
+        color: yellowgreen;
+    }
+
+    .covidInfo ul li a{
+
+        font-size: 12px;
+    }
+
+}
